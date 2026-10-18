@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GigPitch AI helps freelancers turn their skills into freelance services, pricing, and client proposals.">
+    <title>GigPitch AI — Your Next Side Hustle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">
+            <span class="logo-icon">G</span>
+            GigPitch<span class="logo-ai">AI</span>
+        </a>
+        <span class="nav-label">OPEN-SOURCE AI PROJECT</span>
+        <a href="#generator" class="nav-button">Get Started ↗</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                YOUR SIDE HUSTLE STARTS HERE
+            </div>
+
+            <h1>Turn your skills into<br>
+                <span class="gradient-text">your next income.</span>
+            </h1>
+
+            <p class="hero-description">
+                Tell us what you're good at. Get a freelance service idea,
+                pricing guidance, and a client pitch to help you get started.
+            </p>
+
+            <div class="feature-list">
+                <span>✦ Service ideas</span>
+                <span>✦ Pricing guidance</span>
+                <span>✦ Client proposals</span>
+            </div>
+        </section>
+
+        <section class="generator-section" id="generator">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">THE GIG GENERATOR</span>
+                    <h2>Build your first offer</h2>
+                </div>
+                <span class="step-label">STEP 01 / 02</span>
+            </div>
+
+            <form id="gig-form">
+                <div class="form-group">
+                    <label for="skills">What skills do you have?</label>
+                    <textarea
+                        id="skills"
+                        name="skills"
+                        placeholder="e.g. HTML, CSS, video editing, graphic design..."
+                        rows="3"
+                        required
+                    ></textarea>
+                    <span class="field-hint">
+                        Include your strongest skills, even if you're a beginner.
+                    </span>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="experience">Your experience</label>
+                        <select id="experience" name="experience" required>
+                            <option value="Beginner">Beginner</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Advanced">Advanced</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Target client budget</label>
+                        <select id="budget" name="budget" required>
+                            <option value="Under ₹1,000">Under ₹1,000</option>
+                            <option value="₹1,000–₹5,000">₹1,000–₹5,000</option>
+                            <option value="₹5,000–₹15,000">₹5,000–₹15,000</option>
+                            <option value="₹15,000+">₹15,000+</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="client">Who do you want to work with?</label>
+                    <input
+                        type="text"
+                        id="client"
+                        name="client"
+                        placeholder="e.g. small businesses, creators, students"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="requirements">What does your client need?</label>
+                    <textarea
+                        id="requirements"
+                        name="requirements"
+                        placeholder="e.g. A local shop needs a simple website to display its products..."
+                        rows="3"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" id="generate-btn" class="generate-button">
+                    Generate My Gig <span>↗</span>
+                </button>
+
+                <p class="privacy-note">
+                    ✦ Your skills, your idea, your next opportunity.
+                </p>
+            </form>
+
+            <div id="results" class="results hidden" aria-live="polite">
+                <div class="results-heading">
+                    <span class="eyebrow">YOUR GIG PITCH</span>
+                    <h2>Your next opportunity</h2>
+                </div>
+                <div id="result-content"></div>
+            </div>
+        </section>
+
+        <section class="how-section">
+            <span class="eyebrow">SIMPLE BY DESIGN</span>
+            <h2>From skills to first pitch.</h2>
+
+            <div class="steps">
+                <article class="step-card">
+                    <span class="step-number">01</span>
+                    <h3>Share your skills</h3>
+                    <p>Tell the tool what you can do and who you want to help.</p>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">02</span>
+                    <h3>Generate your offer</h3>
+                    <p>Get a service idea, suggested price, and proposal draft.</p>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">03</span>
+                    <h3>Reach your client</h3>
+                    <p>Use your pitch as a starting point for finding your first customer.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#" class="logo footer-logo">
+            <span class="logo-icon">G</span>
+            GigPitch<span class="logo-ai">AI</span>
+        </a>
+        <p>Built with open-source AI in mind. Made for people ready to build.</p>
+        <span class="copyright">© 2026 GigPitch AI</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
