@@ -3,7 +3,7 @@ const express = require("express");
 const path = require("path");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const MODEL = "qwen2.5:3b";
 
 app.use(express.json({ limit: "20kb" }));
